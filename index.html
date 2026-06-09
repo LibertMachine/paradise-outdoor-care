@@ -957,8 +957,8 @@ textarea:focus {
           <li>Cancel anytime</li>
         </ul>
       </div>
-      <form id="signup-form" method="POST" action="/submit-signup">
-        <div class="form-group">
+      <form id="signup-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+      <div class="form-group">
           <label for="full-name">Full Name *</label>
           <input id="full-name" type="text" name="full_name" placeholder="John Doe" required>
         </div>
@@ -993,7 +993,7 @@ textarea:focus {
           <option>Other</option>
         </select>
 
-        <textarea placeholder="Tell us what you want cared for and where it will be placed."></textarea>
+        <textarea name="message" placeholder="Tell us what you want cared for and where it will be placed."></textarea>
 
         <button class="btn alt" type="submit">Request Outdoor Care Club Signup</button>
       </form>
