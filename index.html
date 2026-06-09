@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paradise Outdoor Care's monthly Outdoor Care Club for Wisconsin's Fox Valley. Flexible cleaning credits for patio furniture, grills, garbage bins, lawn equipment, solar panels, camping gear, and more.">
+  <meta name="theme-color" content="#062b2f">
+  <meta property="og:title" content="Paradise Outdoor Care - Outdoor Care Club">
+  <meta property="og:description" content="Join the Outdoor Care Club. Flexible monthly credits for the outdoor things you enjoy.">
+  <meta property="og:type" content="business.business">
+  <title>Paradise Outdoor Care | Outdoor Care Club | Fox Valley WI</title>
+
+  <style>
+  
+   * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #062b2f;
+      background: linear-gradient(135deg, #fdfcf8, #eef7f5, #dcefeb);
+      line-height: 1.6;
+    }
+.button-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #00a884;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+
+  z-index: 999;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTop:hover {
+  transform: translateY(-3px);
+}
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #062b2f;
+  color: #062b2f;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.tag {
+  color: #00a884;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 6vw, 72px);
+  line-height: 1;
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #4a6164;
+}
+
+.btn.secondary:hover {
+  background-color: #062b2f;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .btn.secondary {
+    width: 100%;
+  }
+}
+    header {
+  padding: 16px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:
+  linear-gradient(
+    rgba(255,255,255,.95),
+    rgba(255,255,255,.95)
+  ),
+
+  repeating-radial-gradient(
+    circle at 0% 100%,
+    rgba(0,168,132,.04) 0px,
+    rgba(0,168,132,.04) 2px,
+    transparent 2px,
+    transparent 40px
+  );
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 4px 18px rgba(0,0,0,.05);
+}
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 18px;
+
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='20' viewBox='0 0 120 20'%3E%3Cpath d='M0 10 Q15 0 30 10 T60 10 T90 10 T120 10' fill='none' stroke='%2300a884' stroke-width='1.5' opacity='0.15'/%3E%3C/svg%3E")
+    repeat-x;
+
+  pointer-events: none;
+}
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      color: #062b2f;
+    }
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+}
+
+.brand-text h3 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 900;
+  color: #062b2f;
+  line-height: 1;
+}
+.header-nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.header-nav a {
+  color: #062b2f;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #00a884;
+}
+.brand-text p {
+  margin-top: 6px;
+  color: #007c69;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+    .btn {
+      background: #062b2f;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      display: inline-block;
+      box-shadow: 0 12px 28px rgba(0,0,0,.16);
+    }
+
+    .btn.alt {
+      background: #00a884;
+    }
+.hero {
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.hero-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 34px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,.14);
+  background: transparent;
+  padding: 0;
+}
+
+.hero-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+    section {
+      padding: 75px 8%;
+    }
+
+    .center {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+  @media (max-width: 850px) {
+  header, .hero, .offer {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+    .header-nav { display: none; }
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}  /* <- End of media query */
+
+/* Badge rules go HERE - outside the media query */
+.badge {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #ffcc33;
+  color: #062b2f;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .5px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.badge span {
+  display: block;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 28px;
+      box-shadow: 0 16px 38px rgba(0,0,0,.08);
+    }
+
+    .card h3 {
+      color: #007c69;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .list {
+      margin-top: 18px;
+      display: grid;
+      gap: 12px;
+      list-style: none;
+    }
+
+    .list li {
+  background: #ffffff;
+  color: #062b2f;
+  padding: 16px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+    .offer {
+      background: linear-gradient(135deg, #063b45, #007c69);
+      color: white;
+      border-radius: 36px;
+      padding: 55px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+      box-shadow: 0 25px 60px rgba(0,0,0,.18);
+    }
+
+    .offer p {
+      color: #dffdf8;
+      font-size: 18px;
+    }
+
+    form {
+      background: white;
+      padding: 28px;
+      border-radius: 28px;
+      display: grid;
+      gap: 14px;
+    }
+    .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00a884;
+  box-shadow: 0 0 0 3px rgba(0, 168, 132, 0.1);
+}
+
+    input, select, textarea {
+      padding: 16px;
+      border: 1px solid #d9e6e3;
+      border-radius: 16px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 30px 8%;
+      text-align: center;
+      color: #4d686b;
+    }
+#pricing .grid {
+  max-width: 1400px;
+  margin: 36px auto 0;
+}
+
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  border-radius: 26px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.pricing-card h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #009574;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7eeee;
+}
+
+.price {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 900;
+  color: #062b2f;
+  margin: 22px 0 28px;
+}
+.plan-tag {
+  text-align: center;
+  color: #d4a300;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.price span {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.pricing-card .list {
+  flex: 1;
+}
+.pricing-card .list li {
+  padding: 10px 14px;
+  min-height: auto;
+}
+ 
+.pricing-card .list li::before {
+  content: "✓";
+
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+
+  border-radius: 50%;
+  background: #00a884;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+}
+
+.pricing-card .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 24px;
+  background: #00a884;
+}
+
+.pricing-card.featured {
+  border: 3px solid #ffcc33;
+  box-shadow:
+    0 25px 50px rgba(0,0,0,.08),
+    0 0 0 6px rgba(255,204,51,.12);
+}
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #ffcc33;
+  color: #062b2f;
+
+  padding: 10px 22px;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Credit system graphic section */
+.credit-system-section {
+  padding-top: 40px;
+}
+
+.credit-system-layout {
+  max-width: 1100px;
+  margin: 36px auto 0;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.credit-graphic-card {
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(0,168,132,.18);
+  border-radius: 34px;
+  padding: 18px;
+  box-shadow: 0 24px 60px rgba(0,0,0,.12);
+}
+
+.credit-graphic {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+.credit-explain-card {
+  background: white;
+  border-radius: 30px;
+  padding: 34px;
+  box-shadow: 0 16px 38px rgba(0,0,0,.08);
+}
+
+.credit-explain-card h3 {
+  color: #007c69;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.credit-explain-card p {
+  color: #4a6164;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.credit-steps {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.credit-steps li {
+  background: #f4fbf9;
+  border-left: 5px solid #00a884;
+  border-radius: 16px;
+  padding: 16px 18px;
+  font-weight: 800;
+}
+
+@media (max-width: 850px) {
+  .credit-system-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.founding-member-banner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #063b45,
+    #007c69
+  );
+
+  color: white;
+
+  padding: 60px 40px;
+  border-radius: 36px;
+
+  box-shadow: 0 25px 60px rgba(0,0,0,.15);
+}
+
+.founding-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.benefit {
+  background: rgba(255,255,255,.12);
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo.png" alt="Paradise Outdoor Care logo" class="logo-image">
+
+    <div class="brand-text">
+      <h3>Paradise Outdoor Care</h3>
+      <p>Family Owned • Fully Insured</p>
+      <p class="service-area">Serving Wisconsin's Fox Valley</p>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <a href="#pricing">Pricing</a>
+    <a href="#how-credits-work">How Credits Work</a>
+    <a href="#credits">Extra Credits</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <a href="#signup" class="btn">Join Outdoor Care Club</a>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-content">
+  
+ <div class="button-group">
+      <a href="#signup" class="btn alt">Start Outdoor Care</a>
+      <a href="#what-we-clean" class="btn secondary">See What We Clean</a>
+    </div>
+  </div>
+<div class="tag">
+  MONTHLY OUTDOOR MAINTENANCE MEMBERSHIP
+</div>
+
+<h1>
+  We Maintain the Things You Enjoy Outdoors.
+</h1>
+
+<p>
+  Flexible monthly cleaning credits for patio furniture, grills, garbage bins, lawn equipment, solar panels, camping gear, and more.
+</p>
+  <div class="hero-card">
+    <img src="hero.png"
+         alt="Paradise Outdoor Care monthly outdoor item cleaning"
+         class="hero-photo">
+  </div>
+</section>
+ </section>
+
+
+<section>
+  <div class="center">
+    <div class="tag">How It Works</div>
+</section>
+
+<!-- FOUNDING MEMBER OFFER -->
+<section class="founding-member-banner">
+
+  <span class="founding-tag">
+    🌴 FOUNDING MEMBER OFFER
+  </span>
+
+  <h2>
+    Become One of Our First 25 Members
+  </h2>
+
+  <p class="founding-subtitle">
+    Lock in your pricing, receive a bonus welcome credit,
+    and help launch Paradise Outdoor Care.
+  </p>
+
+  <div class="founding-benefits">
+
+    <div class="benefit">
+      ✅ Locked-In Pricing
+    </div>
+
+    <div class="benefit">
+      ✅ Priority Scheduling
+    </div>
+
+    <div class="benefit">
+      ✅ Bonus Welcome Credit
+    </div>
+
+  </div>
+
+  <a href="#signup" class="btn alt">
+    Claim Founding Membership →
+  </a>
+
+  <small>
+    Only 25 memberships available.
+  </small>
+
+</section>
+<!-- HOW IT WORKS -->
+
+<section>
+
+<section>
+    <div class="center">
+      <div class="tag">How It Works</div>
+      <h2>Simple outdoor care without the hassle.</h2>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>1. Choose Your Plan</h3>
+        <p>Join the Outdoor Care Club and start earning flexible cleaning credits.</p>
+      </div>
+
+      <div class="card">
+        <h3>2. Place Your Item Outside</h3>
+        <p>Choose what needs care and place it in your cleaning area before your scheduled visit.</p>
+      </div>
+
+      <div class="card">
+        <h3>3. We Clean It</h3>
+        <p>Paradise Outdoor Care uses quiet electric equipment whenever possible and professionally maintains your outdoor items.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-we-clean">
+  <div class="center">
+    <div class="tag">What We Clean</div>
+      
+    <h2>Use credits on the outdoor things you enjoy.</h2>
+      <p>One standard credit covers one item or cleaning area up to 10 ft × 10 ft. Larger or specialty services may require additional credits.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h3>Lawn Mowers</h3><p>Push mowers, riding mowers, and small yard equipment.</p></div>
+      <div class="card"><h3>Grills & Smokers</h3><p>Exterior cleaning for grills, smokers, and outdoor cooking setups.</p></div>
+      <div class="card"><h3>Area Rugs</h3><p>Outdoor rugs and washable patio rugs placed in the cleaning area.</p></div>
+      <div class="card"><h3>Patio Furniture</h3><p>Chairs, tables, benches, and small outdoor furniture sets.</p></div>
+      <div class="card"><h3>Garbage Bins</h3><p>Trash cans, recycling bins, and outdoor containers.</p></div>
+      <div class="card"><h3>Outdoor Equipment</h3><p>Wheelbarrows, garden tools, dog kennels, toys, and similar items.</p></div>
+      <div class="card"><h3>Solar Panels</h3><p>Safe, low-pressure cleaning for residential solar panels. May require multiple credits depending on system size and access.</p></div>
+      <div class="card"><h3>Camping Gear</h3><p>Camp chairs, coolers, tables, cots, cookware, and other washable camping equipment.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="center">
+      <div class="tag">Requirements</div>
+      <h2>What we need when we arrive.</h2>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Water Spigot</h3>
+        <p>A standard outdoor water hookup must be available.</p>
+      </div>
+
+      <div class="card">
+        <h3>Electric Outlet</h3>
+        <p>A standard electrical outlet must be accessible near the cleaning area.</p>
+      </div>
+
+      <div class="card">
+        <h3>Safe Access</h3>
+        <p>Your item should be placed outside in the desired cleaning location.</p>
+      </div>
+    </div>
+  </section>
+<section id="pricing">
+  <div class="center">
+    <div class="tag">Pricing</div>
+    <h2>Choose your Paradise plan.</h2>
+    <p>Flexible monthly credit plans for outdoor cleaning and maintenance.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card pricing-card">
+      <h3>Outdoor Care Club</h3>
+      <div class="price">$49<span>/mo</span></div>
+      <ul class="list">
+        <li>One cleaning credit every month</li>
+        <li>Up to 10 ft × 10 ft</li>
+        <li>Lawn mowers</li>
+        <li>Grills & smokers</li>
+        <li>Area rugs</li>
+        <li>Cancel anytime</li>
+      </ul>
+      <br>
+      <a href="#signup" class="btn alt">Join Outdoor Care Club</a>
+    </div>
+
+    <div class="card pricing-card">
+      <h3>Family Outdoor Care Club</h3>
+      <div class="price">$79<span>/mo</span></div>
+      <ul class="list">
+        <li>Two cleaning credits every month</li>
+        <li>Up to 10 ft × 10 ft each</li>
+        <li>Priority scheduling</li>
+        <li>Flexible item selection</li>
+        <li>Best value for families</li>
+        <li>Cancel anytime</li>
+      </ul>
+      <br>
+      <a href="#signup" class="btn alt">Join Family Plan</a>
+    </div>
+
+    <div class="card pricing-card featured">
+      <div class="plan-tag">⭐ Save $89</div>
+      <h3>Annual Membership</h3>
+      <div class="price">$499<span>/yr</span></div>
+      <ul class="list">
+        <li>12 cleaning credits to use all year</li>
+        <li>Save $89/ year compared to monthly plans</li>
+        <li>Priority scheduling</li>
+        <li>Pay once, enjoy all year</li>
+      </ul>
+      <br>
+      <a href="#signup" class="btn alt">Join Annual Plan</a>
+    </div>
+  </div>
+</section>
+
+<section id="how-credits-work" class="credit-system-section">
+  <div class="center">
+    <div class="tag">How Credits Work</div>
+    <h2>Simple, flexible outdoor care.</h2>
+    <p>Your membership adds credits to your account. You choose how to use them.</p>
+  </div>
+
+  <div class="credit-system-layout">
+    <div class="credit-graphic-card">
+      <img src="outdoor-care-club-credit-system.png"
+           alt="Outdoor Care Club credit system: $49 per month, 1 credit added, choose any eligible service, enjoy a cleaner outdoor space"
+           class="credit-graphic">
+    </div>
+
+    <div class="credit-explain-card">
+      <h3>One membership. Cleaner outdoor living.</h3>
+      <p>The Outdoor Care Club is designed to be easy: join, receive credits, and use them on the outdoor item or service you need most.</p>
+      <ul class="credit-steps">
+        <li>$49/mo adds 1 cleaning credit each month</li>
+        <li>Most standard items use 1 credit</li>
+        <li>Unused credits can roll over while your membership stays active</li>
+        <li>Additional credits are available for bigger projects or multiple items</li>
+      </ul>
+      <a href="#signup" class="btn alt" style="margin-top: 24px;">Join the Outdoor Care Club</a>
+    </div>
+  </div>
+</section>
+
+<section id="credits">
+  <div class="center">
+    <div class="tag">Extra Credits</div>
+    <h2>Need more outdoor care this month?</h2>
+    <p>Members can purchase additional cleaning credits anytime for bigger projects, multiple items, or seasonal cleanups.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>1 Extra Credit</h3>
+      <p>Great for adding one more item to your monthly visit.</p>
+    </div>
+
+    <div class="card">
+      <h3>Credit Packs</h3>
+      <p>Buy multiple credits for patio sets, equipment cleanups, camping gear, or larger outdoor projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>Specialty Services</h3>
+      <p>Solar panels and larger cleaning areas may require multiple credits depending on size and access.</p>
+    </div>
+  </div>
+</section>
+  <section>
+  <div class="center">
+    <div class="tag">Why Homeowners Choose Paradise Outdoor Care</div>
+    <h2>Reliable service you can feel good about.</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Fully Insured</h3>
+      <p>Professional service with protection and peace of mind.</p>
+    </div>
+
+    <div class="card">
+      <h3>Family Owned</h3>
+      <p>Local service from a family-owned business that cares.</p>
+    </div>
+
+    <div class="card">
+      <h3>Reliable Monthly Service</h3>
+      <p>Your outdoor spaces and belongings stay cleaner without adding chores to your weekend.</p>
+    </div>
+
+    <div class="card">
+      <h3>Satisfaction Focused</h3>
+      <p>We want every visit to leave your outdoor items looking fresh, clean, and cared for.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="center">
+    <div class="tag" id="faq">FAQ</div>
+    <h2>Common questions.</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>What counts as a cleaning credit?</h3>
+      <p>One standard item or cleaning area up to 10 ft × 10 ft. Specialty services like solar panels may require multiple credits depending on size and access.</p>
+    </div>
+
+    <div class="card">
+      <h3>Do I need to be home?</h3>
+      <p>No. As long as the item is outside and water/electric access is available.</p>
+    </div>
+
+    <div class="card">
+      <h3>Can I change items month to month?</h3>
+      <p>Yes. Your credits are flexible, so you can choose a different eligible item or service each month.</p>
+    </div>
+
+    <div class="card">
+      <h3>Are driveways included?</h3>
+      <p>Full driveways are not included in the standard membership. Small concrete areas up to 10 ft × 10 ft may qualify as one credit.</p>
+    </div>
+
+    <div class="card">
+      <h3>Can I cancel anytime?</h3>
+      <p>Yes. Monthly plans are designed to be simple and flexible.</p>
+    </div>
+
+    <div class="card">
+      <h3>What do I need to provide?</h3>
+      <p>A standard water spigot, standard electrical outlet, and safe access to the item.</p>
+    </div>
+  </div>
+</section>
+<section id="signup">
+    <div class="offer">
+      <div>
+        <div class="tag">Outdoor Care Club</div>
+        <h2>Join the Outdoor Care Club Today!</h2>
+        <p>
+          One monthly visit. One standard item or cleaning area up to 10 ft × 10 ft. Specialty services like solar panels may require multiple credits depending on size and access.
+          Perfect for keeping outdoor items fresh all season long. Month to month, cancel anytime
+        </p>
+
+        <ul class="list">
+          <li>Flexible Cleaning Credits</li>
+          <li>Standard credits cover items or areas up to 10 ft × 10 ft</li>
+          <li>Driveways excluded</li>
+          <li>Cancel anytime</li>
+        </ul>
+      </div>
+      <form id="signup-form" method="POST" action="/submit-signup">
+        <div class="form-group">
+          <label for="full-name">Full Name *</label>
+          <input id="full-name" type="text" name="full_name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input id="email" type="email" name="email" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input id="phone" type="tel" name="phone" placeholder="(555) 123-4567" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Service Address *</label>
+          <input id="address" type="text" name="address" placeholder="123 Main St, Appleton, WI" required>
+        </div>
+
+        <div class="form-group">
+          <label for="item-select">What do you want cared for? *</label>
+          <select id="item-select" name="item_to_clean" required>
+            <option value="">Select an item or service...</option>
+          <option>Lawn mower</option>
+          <option>Grill / smoker</option>
+          <option>Area rug</option>
+          <option>Patio furniture</option>
+          <option>Garbage / recycling bins</option>
+          <option>Outdoor equipment / tools</option>
+          <option>Solar panels</option>
+          <option>Camping gear</option>
+          <option>Other</option>
+        </select>
+
+        <textarea placeholder="Tell us what you want cared for and where it will be placed."></textarea>
+
+        <button class="btn alt" type="submit">Request Outdoor Care Club Signup</button>
+      </form>
+    </div>
+  </section>
+<footer>
+  <div style="text-align: center; padding: 20px 8%; color: #4d686b;">
+    © 2026 Paradise Outdoor Care · Outdoor Care Club · Serving Wisconsin's Fox Valley
+  </div>
+</footer>
+<button id="backToTop" title="Back to Top">
+  ↑
+</button>
+<script>
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 600) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
+</body>
+</html>
