@@ -597,6 +597,72 @@ textarea:focus {
   border-radius: 999px;
   font-weight: 800;
 }
+  html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 16px 5%;
+  }
+
+  .header-brand {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  section {
+    padding: 48px 5%;
+  }
+
+  .grid,
+  #pricing .grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+
+  .card,
+  .pricing-card,
+  .offer,
+  .hero-card,
+  .credit-system-layout,
+  .founding-member-banner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-card {
+    padding: 26px 22px;
+  }
+
+  .price {
+    font-size: 46px;
+  }
+
+  .offer {
+    grid-template-columns: 1fr;
+    padding: 32px 22px;
+  }
+
+  .btn {
+    max-width: 100%;
+    text-align: center;
+  }
+}
   </style>
 </head>
 
