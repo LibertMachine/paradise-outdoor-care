@@ -364,6 +364,57 @@
         padding: 11px;
       }
     }
+    .balance-text{
+    margin-top:8px;
+    color:#eadfca;
+    font-weight:700;
+}
+
+.credit-meter{
+    margin-top:30px;
+}
+
+.meter-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    font-size:.9rem;
+    font-weight:700;
+    color:#eadfca;
+}
+
+.meter{
+    height:16px;
+    background:rgba(255,255,255,.18);
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.meter-fill{
+    width:58%;
+    height:100%;
+    border-radius:999px;
+    background:linear-gradient(
+        90deg,
+        #d9c7a3,
+        #ffffff
+    );
+}
+
+.next-credit{
+    margin-top:24px;
+    padding:16px;
+    border-radius:16px;
+    background:rgba(255,255,255,.08);
+    line-height:1.6;
+    font-size:.95rem;
+}
+
+.next-credit strong{
+    display:block;
+    font-size:1.1rem;
+    color:white;
+}
   </style>
 </head>
 
@@ -383,12 +434,36 @@
           cleanings for the outdoor things your family actually uses.
         </p>
       </div>
+<div class="hero-card">
 
-      <div class="hero-card">
-        <small>Paradise Balance</small>
-        <div class="balance">7</div>
-        <p>Paradise Credits available</p>
-      </div>
+    <small>🌴 Paradise Balance</small>
+
+    <div class="balance">7</div>
+
+    <p class="balance-text">
+        Paradise Credits Available
+    </p>
+
+    <div class="credit-meter">
+
+        <div class="meter-top">
+            <span>5 Used</span>
+            <span>7 Available</span>
+        </div>
+
+        <div class="meter">
+            <div class="meter-fill"></div>
+        </div>
+
+    </div>
+
+    <div class="next-credit">
+        ⏰ Next Monthly Deposit
+        <strong>July 1, 2026</strong>
+    </div>
+
+</div>
+    
     </section>
   </header>
 
