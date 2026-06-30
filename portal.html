@@ -415,6 +415,38 @@
     font-size:1.1rem;
     color:white;
 }
+ .hero-card small {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:var(--tan);
+    font-weight:800;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.balance-logo{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+} 
+    .hero-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.balance-watermark{
+    position:absolute;
+
+    right:-40px;
+    bottom:-40px;
+
+    width:240px;
+
+    opacity:.08;
+
+    pointer-events:none;
+}
   </style>
 </head>
 
@@ -436,6 +468,16 @@
       </div>
 <div class="hero-card">
 
+    <img src="ParadiseBalanceLogo.png"
+         class="balance-watermark">
+
+    <small>
+        <img src="ParadiseBalanceLogo.png"
+             class="balance-logo">
+        Paradise Balance
+    </small>
+
+    ...
     <small>
     <img src="ClubLogo.png" class="balance-logo">
     Paradise Balance
