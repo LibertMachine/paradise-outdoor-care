@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Care Club | Member Portal</title>
+
+  <style>
+    :root {
+      --green: #1f5f3b;
+      --green-dark: #123923;
+      --cream: #f6f1e7;
+      --tan: #d9c7a3;
+      --white: #fffaf0;
+      --ink: #1f1f1f;
+      --gray: #6b6b6b;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: var(--white);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #eadfca;
+      font-size: 1.1rem;
+    }
+
+    .portal {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .customer-card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .customer-card h2 {
+      margin-top: 0;
+      color: var(--green-dark);
+    }
+
+    .credit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .credit-box {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .credit-box h3 {
+      margin: 0;
+      color: var(--gray);
+      font-size: 1rem;
+    }
+
+    .credit-box .number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--green);
+      margin-top: 10px;
+    }
+
+    .section {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: var(--green-dark);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 14px;
+      border-bottom: 1px solid #e4d8bf;
+      text-align: left;
+    }
+
+    th {
+      color: var(--green-dark);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #e7f3eb;
+      color: var(--green-dark);
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: var(--green-dark);
+    }
+
+    @media (max-width: 750px) {
+      .credit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Paradise Care Club</h1>
+    <p>Track your credits. Schedule services. Keep the outdoors paradise ready.</p>
+  </header>
+
+  <main class="portal">
+
+    <section class="customer-card">
+      <h2>Welcome, Patrick</h2>
+      <p><strong>Membership:</strong> Paradise Care Club</p>
+      <p><strong>Status:</strong> <span class="badge">Active</span></p>
+      <p><strong>Next Credit Drop:</strong> July 1, 2026</p>
+    </section>
+
+    <section class="credit-grid">
+      <div class="credit-box">
+        <h3>Total Credits</h3>
+        <div class="number">12</div>
+      </div>
+
+      <div class="credit-box">
+        <h3>Credits Used</h3>
+        <div class="number">5</div>
+      </div>
+
+      <div class="credit-box">
+        <h3>Credits Remaining</h3>
+        <div class="number">7</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Service History</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Service</th>
+            <th>Credits Used</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>June 10, 2026</td>
+            <td>Garbage Bin Cleaning</td>
+            <td>1</td>
+            <td><span class="badge">Completed</span></td>
+          </tr>
+
+          <tr>
+            <td>June 18, 2026</td>
+            <td>Patio Furniture Wash</td>
+            <td>2</td>
+            <td><span class="badge">Completed</span></td>
+          </tr>
+
+          <tr>
+            <td>June 25, 2026</td>
+            <td>Grill Exterior Cleaning</td>
+            <td>2</td>
+            <td><span class="badge">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Available Services</h2>
+      <p>You currently have <strong>7 credits</strong> available.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Credit Cost</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Garbage Bin Cleaning</td>
+            <td>1 credit</td>
+          </tr>
+
+          <tr>
+            <td>Grill Exterior Cleaning</td>
+            <td>2 credits</td>
+          </tr>
+
+          <tr>
+            <td>Patio Furniture Wash</td>
+            <td>2 credits</td>
+          </tr>
+
+          <tr>
+            <td>Solar Panel Rinse</td>
+            <td>3 credits</td>
+          </tr>
+
+          <tr>
+            <td>Camping Gear Washdown</td>
+            <td>3 credits</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a class="btn" href="mailto:paradiseoutdoorcare@example.com">
+        Request a Service
+      </a>
+    </section>
+
+  </main>
+
+</body>
+</html>
