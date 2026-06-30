@@ -293,7 +293,45 @@
       color: var(--gray);
       padding: 35px 20px;
     }
+.member-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #e4d8bf;
+}
 
+.avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green), var(--tan-dark));
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.member-profile h3 {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 1.15rem;
+}
+
+.member-profile p {
+  margin: 4px 0;
+  color: var(--gray);
+  font-weight: 700;
+}
+
+.member-profile span {
+  color: var(--tan-dark);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
     @media (max-width: 850px) {
       header {
         padding-bottom: 70px;
@@ -382,6 +420,15 @@
       </div>
 
       <div class="card">
+        <div class="member-profile">
+  <div class="avatar">PR</div>
+
+  <div>
+    <h3>Patrick Roeland</h3>
+    <p>Paradise Care Club</p>
+    <span>Member #00027 · Gold Member</span>
+  </div>
+</div>
         <h2>Quick Actions</h2>
         <div class="quick-actions">
           <a class="btn" href="mailto:paradiseoutdoorcare@example.com">
